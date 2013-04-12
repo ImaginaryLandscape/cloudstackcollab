@@ -1,0 +1,17 @@
+{% extends "site_base.html" %}
+
+{% load i18n %}
+{% load boxes_tags %}
+
+{% block head_title %}{% trans "Welcome" %}{% endblock %}
+
+{% block body_class %}home{% endblock %}
+
+{% block topbar_base %}{% endblock %}
+
+{% block body_base %}
+  <img style="display: block; margin: 100px auto 50px" src="{{ STATIC_URL }}img/ccc.png" alt="Cloudstack Collaboration Conference. June 23-25, 2013 | Santa Clara, CA" />
+  <div style="color: #555; text-align: center; font-size: 20px;">
+  {% box "homepage" %}
+  </div>
+{% endblock %}
