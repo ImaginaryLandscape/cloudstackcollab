@@ -17,6 +17,9 @@ urlpatterns = patterns("",
     url(r"^$", direct_to_template, {
         "template": "homepage.html",
     }, name="home"),
+    url(r"^dev/", direct_to_template, {
+        "template": "default_dev.html",
+    }, name="dev"),
     url(r"^admin/", include(admin.site.urls)),
     
     url(r"^account/signup/$", symposion.views.SignupView.as_view(), name="account_signup"),

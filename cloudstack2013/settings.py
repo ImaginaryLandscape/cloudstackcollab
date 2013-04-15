@@ -111,7 +111,7 @@ MIDDLEWARE_CLASSES = [
     "debug_toolbar.middleware.DebugToolbarMiddleware",
 ]
 
-ROOT_URLCONF = "symposion_project.urls"
+ROOT_URLCONF = "cloudstack2013.urls"
 
 TEMPLATE_DIRS = [
     os.path.join(PACKAGE_ROOT, "templates"),

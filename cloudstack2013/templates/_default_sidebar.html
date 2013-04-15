@@ -2,21 +2,17 @@
 {% load thumbnail %}
 
 {% sponsor_levels as levels %}
-
-<h2>Sponsors</h2>
-
-<div class="sponsor-list">
-    {% for level in levels %}
-        {% if level.sponsors %}
-            <h3 style="margin-top: 3em;">{{ level.name }}</h3>
-            
-            {% for sponsor in level.sponsors %}
-                <div style="margin: 10px 0;">
-                    <a href="{{ sponsor.external_url }}">
-                        <img src="{% thumbnail sponsor.website_logo '100x60' %}" alt="{{ sponsor.name }}" />
-                    </a>
-                </div>
-            {% endfor %}
-        {% endif %}
+<div id="sponsors">
+<a id="prev" title="Previous" href="#">Previous</a>
+<a id="next" title="Next" href="#">Next</a>
+<ul class="sponsor-list">
+  {% for level in levels %}
+    {% for sponsor in level.sponsors %}
+      <li><a href="{{ sponsor.external_url }}"><img src="{% thumbnail sponsor.website_logo '100x60' %}" alt="{{ sponsor.name }}" /></a>
+          <span class="sponsor-level">{{ level.name }}</span>
+      </li>
     {% endfor %}
+  {% endfor %}
+</ul>
 </div>
+
