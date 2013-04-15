@@ -1,0 +1,252 @@
+html {
+  background: #002655 url('../img/CSCON-back.jpg') no-repeat;
+  background-size: cover;
+}
+body {
+  background: none;
+  font-size: 15px;
+  line-height: 22px;
+  margin: 10px auto;
+  max-width: 980px;
+  padding: 0;
+  width: 90%;
+}
+h1, h2, a {
+  color: #28a5e4;
+  font-weight: normal;
+}
+.container-fluid {
+  padding-left: 1%;
+  padding-right: 1%;
+}
+.row-fluid {
+  overflow: hidden;
+}
+#main {
+  background: rgba(255,255,255,.85);
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  padding: 0 0 40px;
+}
+#content {
+  padding: 4%;
+  width: 92%;
+}
+#site-header {
+  text-shadow: 0 1px 1px rgba(0,0,0,.4);
+}
+#account-nav a {
+  font-size: 13px;
+  padding: 0;
+  margin: 0 0 0 20px;
+}
+#account-nav a:hover,
+#account-nav a:focus {
+  background: none;
+}
+#masthead {
+  float: right;
+  margin-bottom: 8px;
+  text-align: right;
+  width: 100%;
+}
+#masthead, #masthead a {
+  color: #fff!important;
+}
+#masthead h1, #masthead h2 {
+  clear: right;
+  float: right;
+  letter-spacing: 1px;
+  font-weight: normal;
+  text-transform: lowercase;
+}
+#masthead h1 {
+  font-size: 46px;
+  line-height: normal;
+  margin: -8px -4px 0 0;
+}
+#masthead h2 {
+  float: right;
+  font-size: 14px;
+  line-height: normal;
+  margin: -25px 0 0 0;
+}
+#masthead h1 span {
+  background: url('../img/CSCON-logo.png') no-repeat;
+  float: left;
+  height: 99px;
+  margin: -24px 20px 0 0;
+  width: 317px;
+  overflow: hidden;
+  text-indent: 9999px;
+}
+.navbar {
+  clear: both;
+  margin-bottom: 4px;
+}
+.navbar-inner {
+  background: none;
+  border: none;
+  box-shadow: none;
+  clear: both;
+  min-height: 0;
+  padding: 0;
+}
+.navbar .nav {
+  float: right;
+  margin-right: 0;
+}
+.navbar .nav > li {
+  margin-left: 20px;
+}
+.navbar .nav li a {
+  text-shadow: none;
+}
+.navbar .nav > li > a {
+  color: #fff;
+  padding: 0;
+  text-shadow: inherit;
+  text-transform: uppercase;
+}
+.navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle,
+#account-nav a:focus,
+#account-nav a:hover,
+.navbar .nav > li > a:focus,
+.navbar .nav > li > a:hover {
+  color: #28A5E4;
+  text-shadow: 0 0 2px rgba(255,255,255,.7);
+}
+.navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle {
+  background: none;
+}
+.dropdown-menu {
+  left: auto;
+  right: -13px;
+}
+.navbar .nav > li > .dropdown-menu:after {
+  left: auto;
+  right: 10px;
+}
+.navbar .nav > li > .dropdown-menu:before {
+  left: auto;
+  right: 9px;
+}
+#sponsors {
+  background: url('../img/CSCON-sponsorstrip.png') no-repeat left;
+  height: 124px;
+  padding-left: 46px;
+  position: relative;
+}
+#prev, #next {
+  background-image: url('../img/CSCON-arrows.png');
+  display: block;
+  height: 18px;
+  width: 14px;
+  bottom: 30px;
+  overflow: hidden;
+  text-indent: -9999px;
+  position:absolute;
+  z-index: 2;
+}
+#prev {
+  background-position: 0 0;
+  left: 46px;
+}
+#next {
+  background-position: -17px 0;
+  right: 0;
+}
+.sponsor-list {
+  height: 124px;
+  list-style-type: none;
+  margin-left: 0;
+  overflow: hidden;
+}
+.sponsor-list li {
+  float: left;
+  height: 100%;
+  position: relative;
+  text-align: center;
+/*  width: 20%; */
+}
+.sponsor-list li a {
+  display: block;
+  padding-bottom: 24px;
+}
+.sponsor-list li a:hover,
+.sponsor-list li a:focus {
+  opacity: .8;
+  text-decoration: none;
+}
+
+.sponsor-list li .sponsor-level {
+  color: #053652;
+  font-size: 12px;
+  position: absolute;
+  bottom: 6px;
+  left: 0;
+  width: 100%;
+}
+#site-footer {
+  background: url('../img/CSCON-littlecloud.png') no-repeat bottom left;
+  color: #fff;
+  float: right;
+  font-size: 11px;
+  line-height: normal;
+  margin-right: 1%;
+  margin-bottom: 40px;
+  text-align: right;
+  border: none!important;
+  padding: 8px 0 0 0!important;
+  margin-top: 0!important;
+}
+#site-footer a {
+  color: #fff;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+ 
+.clearfix {
+  display: inline-block;
+}
+@media (max-width: 1023px) {
+  #masthead {
+    margin-bottom: 16px;
+  }
+  #account-nav {
+    margin-bottom: 0;
+  }
+  #masthead h1 span {
+    display: block;
+    float: none;
+    margin: 0 auto;
+  }
+  #masthead h1 {
+    float: none;
+    font-size: 24px;
+    margin-top: 0;
+    text-align: center;
+  }
+  #masthead h2 {
+    float: none;
+    margin: 4px 0;
+    text-align: center;
+  }
+  .navbar .nav {
+    width: 100%;
+  }
+  .navbar .nav > li {
+    float: left;
+    font-size: 12px;
+    margin: 0 1% 0 0;
+    text-align: right;
+    width: 24%;
+  }
+}
