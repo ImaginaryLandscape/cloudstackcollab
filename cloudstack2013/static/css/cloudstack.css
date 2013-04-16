@@ -19,6 +19,9 @@ h1, h2, a {
   padding-left: 1%;
   padding-right: 1%;
 }
+.container-fluid .row .span12 {
+  width: 100%;
+}
 .row-fluid {
   overflow: hidden;
 }
@@ -109,6 +112,12 @@ h1, h2, a {
   text-shadow: inherit;
   text-transform: uppercase;
 }
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
+  background: none;
+  box-shadow: none;
+  color: #28A5E4;
+  text-shadow: none;
+}
 .navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle,
 #account-nav a:focus,
 #account-nav a:hover,
@@ -178,6 +187,9 @@ h1, h2, a {
 .sponsor-list li a:focus {
   opacity: .8;
   text-decoration: none;
+}
+.sponsor-list li img {
+  min-width: 50%;
 }
 
 .sponsor-list li .sponsor-level {
