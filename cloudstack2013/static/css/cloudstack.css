@@ -115,16 +115,17 @@ h1, h2, a {
 .navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
   background: none;
   box-shadow: none;
-  color: #28A5E4;
-  text-shadow: none;
+  color: #002655;
+  cursor: default;
+  text-shadow: 0 0 2px rgba(255,255,255,.85);
 }
 .navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle,
 #account-nav a:focus,
 #account-nav a:hover,
 .navbar .nav > li > a:focus,
 .navbar .nav > li > a:hover {
-  color: #28A5E4;
-  text-shadow: 0 0 2px rgba(255,255,255,.7);
+  color: #002655;
+  text-shadow: 0 0 2px rgba(255,255,255,.85);
 }
 .navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle {
   background: none;
