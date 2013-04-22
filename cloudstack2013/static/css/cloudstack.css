@@ -65,7 +65,7 @@ h1, h2, a {
   text-transform: lowercase;
 }
 #masthead h1 {
-  font-size: 46px;
+  font-size: 42px;
   line-height: normal;
   margin: -8px -4px 0 0;
 }
@@ -73,14 +73,16 @@ h1, h2, a {
   float: right;
   font-size: 14px;
   line-height: normal;
-  margin: -25px 0 0 0;
+  margin: -5px 0 0 0;
 }
 #masthead h1 span {
-  background: url('../img/CSCON-logo.png') no-repeat;
+  background: url('../img/apachecloudstack.png') no-repeat center center;
+  background-size: contain;
   float: left;
-  height: 99px;
-  margin: -24px 20px 0 0;
-  width: 317px;
+  height: 56px;
+  margin: 0px 20px 0 0;
+  max-width: 100%;
+  width: 456px;
   overflow: hidden;
   text-indent: 9999px;
 }
@@ -244,7 +246,7 @@ h1, h2, a {
   #masthead h1 {
     float: none;
     font-size: 24px;
-    margin-top: 0;
+    margin-top: 24px;
     text-align: center;
   }
   #masthead h2 {
