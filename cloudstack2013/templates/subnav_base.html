@@ -1,0 +1,17 @@
+{% extends "site_base.html" %}
+
+{% load i18n %}
+
+{% block body_outer %}
+    <div id="content" class="row-fluid">
+      {% include "_messages.html" %}
+      <div class="span2 columns">
+          {% block subnav %}
+          {% endblock %}
+      </div>
+      <div class="span10 columns">
+          {% block body %}
+          {% endblock %}
+      </div>
+    </div>
+{% endblock %}

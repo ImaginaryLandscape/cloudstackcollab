@@ -22,6 +22,9 @@ h1, h2, a {
 .container-fluid .row .span12 {
   width: 100%;
 }
+.container-fluid .span12 > .row {
+  margin-left: 0;
+}
 .row-fluid {
   overflow: hidden;
 }
@@ -32,9 +35,12 @@ h1, h2, a {
   border-radius: 6px;
   padding: 0 0 40px;
 }
+#body {
+  padding: 40px;
+}
 #content {
-  padding: 4%;
-  width: 92%;
+}
+#post-content {
 }
 #site-header {
   text-shadow: 0 1px 1px rgba(0,0,0,.4);
@@ -88,7 +94,7 @@ h1, h2, a {
 }
 .navbar {
   clear: both;
-  margin-bottom: 4px;
+  margin-bottom: 0;
 }
 .navbar-inner {
   background: none;
@@ -103,34 +109,34 @@ h1, h2, a {
   margin-right: 0;
 }
 .navbar .nav > li {
-  margin-left: 20px;
+  margin-left: 12px;
 }
 .navbar .nav li a {
   text-shadow: none;
 }
 .navbar .nav > li > a {
   color: #fff;
-  padding: 0;
+  padding: 4px 8px 2px;
   text-shadow: inherit;
   text-transform: uppercase;
-}
-.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
-  background: none;
-  box-shadow: none;
-  color: #002655;
-  cursor: default;
-  text-shadow: 0 0 2px rgba(255,255,255,.85);
 }
 .navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle,
 #account-nav a:focus,
 #account-nav a:hover,
 .navbar .nav > li > a:focus,
 .navbar .nav > li > a:hover {
+  background: rgba(255,255,255,.75);
   color: #002655;
   text-shadow: 0 0 2px rgba(255,255,255,.85);
 }
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
+  background: rgba(255,255,255,.85)!important;
+  box-shadow: none;
+  color: #002655;
+  cursor: default;
+  text-shadow: 0 0 2px rgba(255,255,255,.85);
+}
 .navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle {
-  background: none;
 }
 .dropdown-menu {
   left: auto;
@@ -138,11 +144,11 @@ h1, h2, a {
 }
 .navbar .nav > li > .dropdown-menu:after {
   left: auto;
-  right: 10px;
+  right: 18px;
 }
 .navbar .nav > li > .dropdown-menu:before {
   left: auto;
-  right: 9px;
+  right: 17px;
 }
 #sponsors {
   background: url('../img/CSCON-sponsorstrip.png') no-repeat left;
@@ -204,20 +210,26 @@ h1, h2, a {
   width: 100%;
 }
 #site-footer {
-  background: url('../img/CSCON-littlecloud.png') no-repeat bottom left;
   color: #fff;
-  float: right;
   font-size: 11px;
   line-height: normal;
   margin-right: 1%;
   margin-bottom: 40px;
-  text-align: right;
   border: none!important;
   padding: 8px 0 0 0!important;
   margin-top: 0!important;
+  width: 100%;
+}
+#site-footer .floatr {
+  text-align: right;
 }
 #site-footer a {
   color: #fff;
+}
+#site-footer #ob-logo {
+  float: right;
+  margin: 0 4px 0 12px;
+  width: 32px;
 }
 .clearfix:after {
   content: ".";
@@ -227,7 +239,12 @@ h1, h2, a {
   line-height: 0;
   height: 0;
 }
- 
+.floatl {
+  float: left;
+}
+.floatr {
+  float: right;
+} 
 .clearfix {
   display: inline-block;
 }
@@ -262,6 +279,6 @@ h1, h2, a {
     font-size: 12px;
     margin: 0 1% 0 0;
     text-align: right;
-    width: 24%;
+    width: 19%;
   }
 }

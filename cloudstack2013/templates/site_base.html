@@ -10,7 +10,7 @@
 
 {% block style_base %}
     <link href="{% static "symposion/css/symposion.css" %}" rel="stylesheet">
-    <link href="{% static "css/cloudstack.css" %}" rel="stylesheet">
+    <link href="{% static "css/cloudstack.css?nc=422" %}" rel="stylesheet">
     {% block extra_style %}{% endblock %}
 {% endblock %}
 
@@ -83,6 +83,7 @@
             {# {% sitetree_breadcrumbs from "main" %} #}
         {# {% endblock %} #}
         
+        <div id="body">
         {% block body_outer %}
             <div id="content" class="row-fluid">
                 <div class="span12">
@@ -90,14 +91,15 @@
                     {% endblock %}
                 </div>
             </div>
-            <div id="post-content" class="row-fluid">
+        {% endblock %}
+        </div>  
+        <div id="post-content" class="row-fluid">
                 <div class="span12">
                     {% block sidebar %}
                         {% include "_default_sidebar.html" %}
                     {% endblock %}
                 </div>
-            </div>
-        {% endblock %}
+        </div>
     </div>
 
     {% include "_footer.html" %}
