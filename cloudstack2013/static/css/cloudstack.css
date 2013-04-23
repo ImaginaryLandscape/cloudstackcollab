@@ -82,15 +82,15 @@ h1, h2, a {
   margin: -5px 0 0 0;
 }
 #masthead h1 span {
-  background: url('../img/apachecloudstack.png') no-repeat center center;
-  background-size: contain;
   float: left;
   height: 56px;
   margin: 0px 20px 0 0;
   max-width: 100%;
   width: 456px;
   overflow: hidden;
-  text-indent: 9999px;
+}
+#masthead h1 span img {
+  width: 100%;
 }
 .navbar {
   clear: both;
@@ -121,15 +121,15 @@ h1, h2, a {
   text-transform: uppercase;
 }
 .navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle,
-#account-nav a:focus,
-#account-nav a:hover,
 .navbar .nav > li > a:focus,
 .navbar .nav > li > a:hover {
+  background: #e5e5e5;
   background: rgba(255,255,255,.75);
   color: #002655;
   text-shadow: 0 0 2px rgba(255,255,255,.85);
 }
 .navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
+  background: #fff;
   background: rgba(255,255,255,.85)!important;
   box-shadow: none;
   color: #002655;
@@ -279,6 +279,5 @@ h1, h2, a {
     font-size: 12px;
     margin: 0 1% 0 0;
     text-align: right;
-    width: 19%;
   }
 }

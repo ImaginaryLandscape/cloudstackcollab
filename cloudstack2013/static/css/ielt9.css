@@ -1,0 +1,9 @@
+#main {
+  background: #fff;
+}
+#masthead h1 {
+  float: none;
+}
+.navbar-inner {
+  filter: none;
+}
