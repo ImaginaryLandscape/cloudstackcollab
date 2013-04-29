@@ -84,6 +84,7 @@ h1, h2, a {
 #masthead h1 span {
   float: left;
   height: 56px;
+  line-height: 46px;
   margin: 0px 20px 0 0;
   max-width: 100%;
   width: 456px;

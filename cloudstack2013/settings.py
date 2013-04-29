@@ -7,7 +7,7 @@ import posixpath
 PACKAGE_ROOT = os.path.abspath(os.path.dirname(__file__))
 DEPLOYMENT_ROOT = os.path.join(PACKAGE_ROOT, '..', '..', '..')
 
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 DEFAULT_FROM_EMAIL = "webmaster@cloudstack2013.imagescape.com"
@@ -22,7 +22,7 @@ INTERNAL_IPS = [
 ]
 
 ADMINS = [
-    ("Dustin Lacewell", "dlacewell@imagescape.com"),
+    ('Errors', 'errors+cloudstack@imagescape.com'),
 ]
 
 MANAGERS = ADMINS
@@ -138,6 +138,7 @@ INSTALLED_APPS = [
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.sites",
+    "django.contrib.sitemaps",
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "django.contrib.humanize",
@@ -162,6 +163,7 @@ INSTALLED_APPS = [
     "sitetree",
     "account",
     'filer',
+    'robots',
     # 'cmsplugin_filer_file',
     # 'cmsplugin_filer_folder',
     # 'cmsplugin_filer_image',

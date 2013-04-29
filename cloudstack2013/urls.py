@@ -1,6 +1,7 @@
 from django.conf import settings
 from django.conf.urls.defaults import *
 from django.conf.urls.static import static
+from cloudstack2013.sitemaps import *
 
 from django.views.generic.simple import direct_to_template
 
@@ -8,6 +9,13 @@ from django.contrib import admin
 admin.autodiscover()
 
 import symposion.views
+
+sitemaps = {
+    'views': ViewSitemap,
+    'cms': CMSSitemap,
+}
+
+handler500 = "cloudstack2013.views.server_error"
 
 # from pinax.apps.account.openid_consumer import PinaxConsumer
 
@@ -32,9 +40,9 @@ urlpatterns = patterns("",
     url(r"^reviews/", include("symposion.reviews.urls")),
     url(r"^schedule/", include("symposion.schedule.urls")),
     url(r"^markitup/", include("markitup.urls")),
-    
+    (r'^robots\.txt$', include('robots.urls')),
+    (r'^sitemap\.xml$', 'django.contrib.sitemaps.views.sitemap', {'sitemaps': sitemaps}),
     url(r"^", include("symposion.cms.urls")),
 )
-
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
