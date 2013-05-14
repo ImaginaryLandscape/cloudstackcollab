@@ -7,7 +7,7 @@ import posixpath
 PACKAGE_ROOT = os.path.abspath(os.path.dirname(__file__))
 DEPLOYMENT_ROOT = os.path.join(PACKAGE_ROOT, '..', '..', '..')
 
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 DEFAULT_FROM_EMAIL = "webmaster@cloudstack2013.imagescape.com"
