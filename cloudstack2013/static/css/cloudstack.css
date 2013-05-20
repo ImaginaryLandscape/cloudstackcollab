@@ -28,6 +28,10 @@ h1, h2, a {
 .row-fluid {
   overflow: hidden;
 }
+p > img {
+  float: left;
+  padding: 10px 20px 20px 0;
+}
 #main {
   background: rgba(255,255,255,.85);
   -moz-border-radius: 6px;
