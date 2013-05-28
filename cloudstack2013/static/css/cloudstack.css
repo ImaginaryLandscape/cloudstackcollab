@@ -196,6 +196,10 @@ p > img {
 .sponsor-list li a {
   display: inline-block;
   padding: 12px 0;
+  position: absolute;
+  left: 0;
+  bottom: 22px;
+  width: 100%;
 }
 .sponsor-list li a:hover,
 .sponsor-list li a:focus {
