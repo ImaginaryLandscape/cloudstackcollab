@@ -1,5 +1,5 @@
 html {
-  background: #002655 url('../img/CSCON-back.jpg') no-repeat;
+  background: #17589A; /* #002655 url('../img/CSCON-back.jpg') no-repeat; */
   background-size: cover;
 }
 body {
@@ -60,7 +60,7 @@ p > img {
 }
 #masthead {
   float: right;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   text-align: right;
   width: 100%;
 }
@@ -69,7 +69,6 @@ p > img {
 }
 #masthead h1, #masthead h2 {
   clear: right;
-  float: right;
   letter-spacing: 1px;
   font-weight: normal;
   text-transform: lowercase;
@@ -78,18 +77,19 @@ p > img {
   font-size: 42px;
   line-height: normal;
   margin: -8px -4px 0 0;
+  text-align: center;
 }
 #masthead h2 {
-  float: right;
   font-size: 14px;
   line-height: normal;
-  margin: -5px 0 0 0;
+  margin: 4px 0;
+  text-align: center;
 }
 #masthead h1 span {
-  float: left;
+  display: block;
   height: 56px;
   line-height: 46px;
-  margin: 0px 20px 0 0;
+  margin: 0px auto;
   max-width: 100%;
   width: 456px;
   overflow: hidden;
@@ -97,6 +97,7 @@ p > img {
 #masthead h1 span img {
   width: 100%;
 }
+
 .navbar {
   clear: both;
   margin-bottom: 0;
@@ -257,7 +258,7 @@ p > img {
 .clearfix {
   display: inline-block;
 }
-@media (max-width: 1023px) {
+@media (max-width: 799px) {
   #masthead {
     margin-bottom: 16px;
   }
@@ -282,9 +283,11 @@ p > img {
   }
   .navbar .nav {
     width: 100%;
+    text-align: center;
   }
   .navbar .nav > li {
-    float: left;
+    display: inline-block;
+    float: none;
     font-size: 12px;
     margin: 0 1% 0 0;
     text-align: right;
