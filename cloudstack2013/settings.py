@@ -10,9 +10,10 @@ DEPLOYMENT_ROOT = os.path.join(PACKAGE_ROOT, '..', '..', '..')
 DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
-DEFAULT_FROM_EMAIL = "webmaster@cloudstack2013.imagescape.com"
+#DEFAULT_FROM_EMAIL = "no-reply@cloudstackcollab.org"
+DEFAULT_FROM_EMAIL = "Cloudstack Collaboration Conference <no-reply@cloudstackcollab.org>"
 
-CONTACT_EMAIL = "webmaster@cloudstack2013.imagescape.com"
+CONTACT_EMAIL = "webmaster+cloudstackcollab@imagescape.com"
 
 # tells Pinax to serve media through the staticfiles app.
 SERVE_MEDIA = DEBUG
