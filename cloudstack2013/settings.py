@@ -11,7 +11,7 @@ DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 #DEFAULT_FROM_EMAIL = "no-reply@cloudstackcollab.org"
-DEFAULT_FROM_EMAIL = "Cloudstack Collaboration Conference <no-reply@cloudstackcollab.org>"
+DEFAULT_FROM_EMAIL = "Cloudstack Collaboration Conference <admin@cloudstackcollab.org>"
 
 CONTACT_EMAIL = "webmaster+cloudstackcollab@imagescape.com"
 
