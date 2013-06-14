@@ -682,8 +682,8 @@ ol.inline {
   margin-left: 0;
   list-style: none;
 }
-ul.inline > li,
-ol.inline > li {
+ul.inline  > li,
+ol.inline  > li {
   display: inline-block;
   padding-left: 5px;
   padding-right: 5px;
@@ -2455,7 +2455,7 @@ table th[class*="span"],
 .open {
   *z-index: 1000;
 }
-.open > .dropdown-menu {
+.open  > .dropdown-menu {
   display: block;
 }
 .pull-right > .dropdown-menu {
@@ -5378,4 +5378,11 @@ table.calendar td span.title {
 table.calendar td span.speaker {
   font-weight: normal;
   display: block;
+}
+.presentation_editing textarea#id_abstract,
+.presentation_editing textarea#id_description {
+  width: 400px;
+}
+.presentation_editing select#id_additional_speakers {
+  height: 200px;
 }
