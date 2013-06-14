@@ -1,0 +1,16 @@
+{% load account_tags %}
+<p>Someone has added the following message on your {{ current_site.name }} proposal, {{ proposal.title }}</p>
+
+<div>
+{{ message.message|safe }}
+</div>
+
+{% if reviewer %}{% url review_detail proposal.pk as detail_url %}{% else %}{% url proposal_detail proposal.pk as detail_url %}{% endif %}
+<p>
+You may respond online at <a href="http://{{ current_site }}{{ detail_url }}#proposal-feedback">http://{{ current_site }}{{ detail_url }}#proposal-feedback</a>. Please do not reply to this message as this email box is not monitored.
+</p>
+
+<p>
+Best,<br />
+The {{ current_site.name }} Planning Committee
+</p>
